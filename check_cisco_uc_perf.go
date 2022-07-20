@@ -382,7 +382,7 @@ func queryHost(ipAddr, nodeIpAddr, object, counterName, objectInstance string) {
 				Proxy: http.ProxyFromEnvironment,
 				TLSClientConfig: &tls.Config{
 					InsecureSkipVerify: true,
-					MaxVersion:         tls.VersionTLS11,
+					MaxVersion:         tls.VersionTLS13,
 				},
 			},
 		}
